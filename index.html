@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pengiriman WhatsApp</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pengiriman WhatsApp</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Form Pengiriman WhatsApp</h1>
-        <form id="whatsapp-form">
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..."></textarea>
+  <div class="container">
+    <h1>Form Pengiriman WhatsApp</h1>
+    <form id="whatsapp-form">
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..."></textarea>
 
-            <label for="sku">SKU Produk:</label>
-            <input type="text" id="sku" name="sku" required placeholder="Masukkan SKU Produk">
+      <label for="sku">SKU Produk:</label>
+      <input type="text" id="sku" name="sku" required placeholder="Masukkan SKU Produk">
 
-            <label for="phone">Nomor Telepon Tujuan:</label>
-            <input type="text" id="phone" name="phone" required placeholder="Contoh: 62082217127576">
+      <label for="phone">Nomor Telepon Tujuan:</label>
+      <input type="text" id="phone" name="phone" required placeholder="Contoh: 62082217127576">
 
-            <label for="image-url">URL Gambar Produk (Opsional):</label>
-            <input type="text" id="image-url" name="image-url" placeholder="Masukkan URL gambar produk">
+      <label for="image-url">URL Gambar Produk (Opsional):</label>
+      <input type="text" id="image-url" name="image-url" placeholder="Masukkan URL gambar produk">
 
-            <button type="submit">Buat Link WhatsApp</button>
-        </form>
+      <!-- Input untuk pertanyaan -->
+      <label for="question">Pertanyaan (Opsional):</label>
+      <input type="text" id="question" name="question" placeholder="Contoh: Apakah masih tersedia?">
 
-        <div id="link-container" style="display: none;">
-            <label for="whatsapp-link">Link WhatsApp:</label>
-            <input type="text" id="whatsapp-link" readonly>
-            <button id="copy-button">Salin Link</button>
-        </div>
+      <button type="submit">Buat Link WhatsApp</button>
+    </form>
+
+
+    <div id="link-container" style="display: none">
+      <label for="whatsapp-link">Link WhatsApp:</label>
+      <input type="text" id="whatsapp-link" readonly />
+      <button id="copy-button">Salin Link</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
