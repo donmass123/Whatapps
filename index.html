@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengiriman WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pengiriman WhatsApp</h1>
+        <form id="whatsapp-form">
+            <label for="nama">Text Ke pelanggan:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="sku">SKU Produk:</label>
+            <input type="text" id="sku" name="sku" required>
+
+            <label for="phone">Nomor Telepon Tujuan:</label>
+            <input type="text" id="phone" name="phone" required placeholder="Contoh: 62082217127576">
+
+            <button type="submit">Buat Link WhatsApp</button>
+        </form>
+
+        <div id="link-container" style="display: none;">
+            <label for="whatsapp-link">Link WhatsApp:</label>
+            <input type="text" id="whatsapp-link" readonly>
+            <button id="copy-button">Salin Link</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
